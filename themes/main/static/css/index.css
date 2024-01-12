@@ -126,6 +126,30 @@ div .video iframe {
 	margin-right: auto;
 }
 
+.button_gl2 {
+	display: flex;
+	border-radius: 50px;
+	flex-grow: 1;
+	background-color: #4273DB;
+	cursor: pointer;
+	transition: all 0.2s ease-in;
+	text-align: center;
+	vertical-align: center;
+}
+.button_gl2:hover {
+	background-color: #4f7ddd;
+}
+.button_gl2 b {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-size: 40px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .button_glbol {
 	display: flex;
 	margin-top: 20px;
@@ -171,6 +195,7 @@ div .video iframe {
 	background-blend-mode: multiply;
 	transition: all 0.1s ease-in;
 	border-radius: 8px;
+	cursor: pointer;
 }
 .usl:hover {
 	background-color: rgba(0,0,0,0.25);
@@ -241,12 +266,29 @@ div .video iframe {
 	border-radius: 90px;
 }
 
+.alb2 {
+/*	margin-top: 10px;*/
+	margin-left: 10px;
+	background: #0060DD;
+	text-align: center;
+	border-radius: 90px;
+}
+.albob2 {
+/*	display: flex;*/
+margin-top: 50px;
+}
+
 .trenn {
 	margin-top: 1.5em;
 	display: flex;
 	flex-wrap: wrap;
 	flex-grow: 1;
 	justify-content: center;
+}
+
+.op {
+	text-align: center;
+	color: #fa1;
 }
 
 .alboms {
@@ -288,6 +330,45 @@ div .video iframe {
 	margin-top: 9.5em;
 	font-size:  45px;
 	background: #0049DD;
+}
+
+.button_gl2 {
+  border: none;
+  border-radius: 30px;
+  padding: 5px 20px;
+  background: #4273DB;
+  color: #fff; /* Белый цвет текста на кнопке */
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  font-size: 20px;
+  padding: 30px;
+}
+.button_gl2:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%, /* Прозрачность начала блика */
+    rgba(255, 255, 255, 0.8), /* Цвет блика */
+    rgba(255, 255, 255, 0) 70% /* Прозрачность конца блика */
+  );
+  top: 0;
+  left: -100px;
+  animation: shine 2s infinite linear; /* Анимация блика */
+}
+@keyframes shine {
+  0% {
+    left: -100%; /* Начальная позиция блика (левая сторона кнопки) */
+  }
+  20% {
+    left: 100%; /* Позиция блика в конце (правая сторона кнопки) */
+  }
+  100% {
+    left: 100%; /* Завершение анимации */
+  }
 }
 
 .contein b {
@@ -450,6 +531,11 @@ iframe {
 /*	text-align: center;*/
 	margin-right: auto;
 	margin-left: auto;
+}
+
+.Karta {
+	text-align: center;
+	margin-top: 10px;
 }
 
 .gal {
